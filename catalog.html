@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Collection - Tasa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1><a href="index.html">TASA</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html" class="active">Fashion</a></li>
+                <li><a href="lifestyle.html">Lifestyle</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cart" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog-hero">
+            <div class="container">
+                <h1>Fashion Collection</h1>
+                <p>Oversized dresses and scarves with traditional handblock prints</p>
+            </div>
+        </section>
+
+        <section class="catalog-content">
+            <div class="container">
+                <div class="catalog-filters">
+                    <h3>Filter by</h3>
+                    <div class="filter-group">
+                        <label>Material:</label>
+                        <select id="material-filter">
+                            <option value="">All Materials</option>
+                            <option value="linen">Linen</option>
+                            <option value="cotton">Cotton</option>
+                            <option value="silk">Silk</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Print Type:</label>
+                        <select id="print-filter">
+                            <option value="">All Prints</option>
+                            <option value="block">Block Print</option>
+                            <option value="floral">Floral</option>
+                            <option value="geometric">Geometric</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products-grid" id="products-grid">
+                    <div class="product-card" data-material="cotton" data-print="floral">
+                        <img src="images/product-dress-1.jpg" alt="Floral Cotton Dress">
+                        <div class="product-info">
+                            <h3>Botanical Garden Dress</h3>
+                            <p class="product-material">Cotton • Handblock Print</p>
+                            <p class="product-price">₹3,200</p>
+                            <button class="add-to-cart" data-product="dress-1">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-material="linen" data-print="geometric">
+                        <img src="images/product-dress-2.jpg" alt="Geometric Linen Dress">
+                        <div class="product-info">
+                            <h3>Sage Geometry Dress</h3>
+                            <p class="product-material">Linen • Traditional Print</p>
+                            <p class="product-price">₹4,500</p>
+                            <button class="add-to-cart" data-product="dress-2">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-material="silk" data-print="floral">
+                        <img src="images/product-scarf-1.jpg" alt="Silk Floral Scarf">
+                        <div class="product-info">
+                            <h3>Lotus Bloom Scarf</h3>
+                            <p class="product-material">Silk • Floral Embroidery</p>
+                            <p class="product-price">₹2,800</p>
+                            <button class="add-to-cart" data-product="scarf-1">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-material="cotton" data-print="block">
+                        <img src="images/product-dress-3.jpg" alt="Block Print Dress">
+                        <div class="product-info">
+                            <h3>Heritage Block Dress</h3>
+                            <p class="product-material">Cotton • Traditional Block Print</p>
+                            <p class="product-price">₹3,800</p>
+                            <button class="add-to-cart" data-product="dress-3">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-material="linen" data-print="floral">
+                        <img src="images/product-scarf-2.jpg" alt="Linen Floral Scarf">
+                        <div class="product-info">
+                            <h3>Meadow Whisper Scarf</h3>
+                            <p class="product-material">Linen • Delicate Florals</p>
+                            <p class="product-price">₹2,200</p>
+                            <button class="add-to-cart" data-product="scarf-2">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-material="silk" data-print="geometric">
+                        <img src="images/product-dress-4.jpg" alt="Silk Geometric Dress">
+                        <div class="product-info">
+                            <h3>Royal Indigo Dress</h3>
+                            <p class="product-material">Silk • Geometric Pattern</p>
+                            <p class="product-price">₹5,200</p>
+                            <button class="add-to-cart" data-product="dress-4">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tasa. Handcrafted with love by local artisans.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Collection - Tasa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1><a href="index.html">TASA</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Fashion</a></li>
+                <li><a href="lifestyle.html" class="active">Lifestyle</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cart" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog-hero">
+            <div class="container">
+                <h1>Lifestyle Collection</h1>
+                <p>Table linen, cushion covers, runners & napkins for your home</p>
+            </div>
+        </section>
+
+        <section class="catalog-content">
+            <div class="container">
+                <div class="catalog-filters">
+                    <h3>Filter by</h3>
+                    <div class="filter-group">
+                        <label>Category:</label>
+                        <select id="category-filter">
+                            <option value="">All Categories</option>
+                            <option value="table-linen">Table Linen</option>
+                            <option value="cushions">Cushion Covers</option>
+                            <option value="runners">Runners & Mats</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Material:</label>
+                        <select id="material-filter">
+                            <option value="">All Materials</option>
+                            <option value="linen">Linen</option>
+                            <option value="cotton">Cotton</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products-grid" id="products-grid">
+                    <div class="product-card" data-category="table-linen" data-material="linen">
+                        <img src="images/table-runner-1.jpg" alt="Botanical Table Runner">
+                        <div class="product-info">
+                            <h3>Botanical Garden Runner</h3>
+                            <p class="product-material">Linen • Handblock Print</p>
+                            <p class="product-price">₹1,800</p>
+                            <button class="add-to-cart" data-product="runner-1">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="cushions" data-material="cotton">
+                        <img src="images/cushion-1.jpg" alt="Floral Cushion Cover">
+                        <div class="product-info">
+                            <h3>Meadow Bloom Cushion</h3>
+                            <p class="product-material">Cotton • Floral Embroidery</p>
+                            <p class="product-price">₹1,200</p>
+                            <button class="add-to-cart" data-product="cushion-1">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="table-linen" data-material="linen">
+                        <img src="images/napkin-set.jpg" alt="Linen Napkin Set">
+                        <div class="product-info">
+                            <h3>Sage Leaf Napkin Set</h3>
+                            <p class="product-material">Linen • Set of 4</p>
+                            <p class="product-price">₹1,600</p>
+                            <button class="add-to-cart" data-product="napkins-1">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="cushions" data-material="linen">
+                        <img src="images/cushion-2.jpg" alt="Geometric Cushion">
+                        <div class="product-info">
+                            <h3>Indigo Geometry Cushion</h3>
+                            <p class="product-material">Linen • Block Print</p>
+                            <p class="product-price">₹1,400</p>
+                            <button class="add-to-cart" data-product="cushion-2">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="runners" data-material="cotton">
+                        <img src="images/placemat-set.jpg" alt="Cotton Placemat Set">
+                        <div class="product-info">
+                            <h3>Heritage Placemat Set</h3>
+                            <p class="product-material">Cotton • Traditional Print • Set of 6</p>
+                            <p class="product-price">₹2,200</p>
+                            <button class="add-to-cart" data-product="placemats-1">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="table-linen" data-material="linen">
+                        <img src="images/tablecloth.jpg" alt="Linen Tablecloth">
+                        <div class="product-info">
+                            <h3>Natural Harmony Tablecloth</h3>
+                            <p class="product-material">Linen • Minimalist Design</p>
+                            <p class="product-price">₹3,500</p>
+                            <button class="add-to-cart" data-product="tablecloth-1">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tasa. Handcrafted with love by local artisans.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

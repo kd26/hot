@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/Applications/Keynote.app/Contents/MacOS/Keynote \"Mood Board.key\" --export-to \"Mood Board.pdf\" --export-format pdf)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(osascript:*)",
+      "WebFetch(domain:unsplash.com)",
+      "Bash(cp:*)",
+      "Bash(mv:*)"
+    ],
+    "deny": []
+  }
+}

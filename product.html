@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botanical Garden Dress - Tasa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1><a href="index.html">TASA</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Fashion</a></li>
+                <li><a href="lifestyle.html">Lifestyle</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cart" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> > <a href="catalog.html">Fashion</a> > Botanical Garden Dress
+                </div>
+
+                <div class="product-content">
+                    <div class="product-images">
+                        <div class="main-image">
+                            <img id="main-product-image" src="images/product-dress-1.jpg" alt="Botanical Garden Dress">
+                        </div>
+                        <div class="thumbnail-images">
+                            <img src="images/product-dress-1.jpg" alt="Front view" class="thumbnail active">
+                            <img src="images/product-dress-1-back.jpg" alt="Back view" class="thumbnail">
+                            <img src="images/product-dress-1-detail.jpg" alt="Print detail" class="thumbnail">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <h1>Botanical Garden Dress</h1>
+                        <p class="product-price">₹3,200</p>
+                        
+                        <div class="product-description">
+                            <p>Embrace nature's beauty with our Botanical Garden Dress. Crafted from premium cotton with traditional handblock printing techniques, this oversized dress features delicate floral motifs inspired by Indian heritage gardens.</p>
+                        </div>
+
+                        <div class="product-details">
+                            <h3>Details</h3>
+                            <ul>
+                                <li><strong>Material:</strong> 100% Cotton</li>
+                                <li><strong>Print:</strong> Traditional Handblock</li>
+                                <li><strong>Fit:</strong> Oversized, Relaxed</li>
+                                <li><strong>Care:</strong> Machine wash cold, hang dry</li>
+                                <li><strong>Made by:</strong> Local artisans in Rajasthan</li>
+                            </ul>
+                        </div>
+
+                        <div class="size-selection">
+                            <h3>Size</h3>
+                            <div class="size-options">
+                                <button class="size-btn" data-size="XS">XS</button>
+                                <button class="size-btn" data-size="S">S</button>
+                                <button class="size-btn active" data-size="M">M</button>
+                                <button class="size-btn" data-size="L">L</button>
+                                <button class="size-btn" data-size="XL">XL</button>
+                            </div>
+                        </div>
+
+                        <div class="quantity-selection">
+                            <h3>Quantity</h3>
+                            <div class="quantity-controls">
+                                <button class="qty-btn" id="decrease-qty">-</button>
+                                <span id="quantity">1</span>
+                                <button class="qty-btn" id="increase-qty">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn" id="add-to-cart">Add to Cart</button>
+                            <button class="wishlist-btn">♡ Add to Wishlist</button>
+                        </div>
+
+                        <div class="shipping-info">
+                            <h3>Shipping & Returns</h3>
+                            <p>Free shipping on orders over ₹2,500<br>
+                            Easy returns within 30 days<br>
+                            Handcrafted with care, please allow 3-5 business days for processing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="related-products">
+                    <h3>You might also like</h3>
+                    <div class="related-grid">
+                        <div class="related-item">
+                            <img src="images/product-dress-2.jpg" alt="Sage Geometry Dress">
+                            <h4>Sage Geometry Dress</h4>
+                            <p>₹4,500</p>
+                        </div>
+                        <div class="related-item">
+                            <img src="images/product-scarf-1.jpg" alt="Lotus Bloom Scarf">
+                            <h4>Lotus Bloom Scarf</h4>
+                            <p>₹2,800</p>
+                        </div>
+                        <div class="related-item">
+                            <img src="images/product-dress-3.jpg" alt="Heritage Block Dress">
+                            <h4>Heritage Block Dress</h4>
+                            <p>₹3,800</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tasa. Handcrafted with love by local artisans.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
