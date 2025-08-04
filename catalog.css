@@ -146,18 +146,183 @@
     display: none;
 }
 
-@media (max-width: 768px) {
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .catalog-hero {
+        padding: 3rem 0;
+    }
+    
     .catalog-hero h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+    }
+    
+    .catalog-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .catalog-content {
+        padding: 3rem 0;
+    }
+    
+    .catalog-filters {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .product-card img {
+        height: 220px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .catalog-hero {
+        padding: 2rem 0;
+    }
+    
+    .catalog-hero h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .catalog-hero p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .catalog-content {
+        padding: 2rem 0;
+    }
+    
+    .catalog-filters {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 8px;
+    }
+    
+    .catalog-filters h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
     }
     
     .filter-group {
         display: block;
         margin-right: 0;
         margin-bottom: 1rem;
+        width: 100%;
+    }
+    
+    .filter-group label {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .filter-group select {
+        width: 100%;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+        border-radius: 8px;
     }
     
     .products-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .product-card {
+        border-radius: 12px;
+    }
+    
+    .product-card img {
+        height: 200px;
+    }
+    
+    .product-info {
+        padding: 1rem;
+    }
+    
+    .product-info h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .product-material {
+        font-size: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .product-price {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .add-to-cart {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+        border-radius: 20px;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .catalog-hero {
+        padding: 1.5rem 0;
+    }
+    
+    .catalog-hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .catalog-hero p {
+        font-size: 0.9rem;
+    }
+    
+    .catalog-filters {
+        margin: 0 0.5rem 1rem;
+        padding: 0.8rem;
+    }
+    
+    .catalog-filters h3 {
+        font-size: 1rem;
+    }
+    
+    .filter-group select {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.85rem;
+    }
+    
+    .products-grid {
+        gap: 1rem;
+        margin: 0 0.5rem;
+    }
+    
+    .product-card img {
+        height: 180px;
+    }
+    
+    .product-info {
+        padding: 0.8rem;
+    }
+    
+    .product-info h3 {
+        font-size: 1rem;
+    }
+    
+    .product-material {
+        font-size: 0.75rem;
+    }
+    
+    .product-price {
+        font-size: 1.1rem;
+    }
+    
+    .add-to-cart {
+        padding: 0.6rem;
+        font-size: 0.85rem;
     }
 }
