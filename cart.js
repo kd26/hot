@@ -11,10 +11,7 @@ class CartPage {
     }
 
     bindEvents() {
-        const checkoutBtn = document.getElementById('checkout-btn');
-        if (checkoutBtn) {
-            checkoutBtn.addEventListener('click', () => this.handleCheckout());
-        }
+        // Checkout button is currently a dummy - no functionality needed
 
         // Bind quantity and remove events
         document.addEventListener('click', (e) => {
@@ -112,25 +109,7 @@ class CartPage {
         localStorage.setItem('cart', JSON.stringify(this.cart));
     }
 
-    handleCheckout() {
-        if (this.cart.length === 0) {
-            alert('Your cart is empty. Please add some items before checkout.');
-            return;
-        }
-
-        const total = this.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-        const shipping = total > 5000 ? 0 : 200;
-        const finalTotal = total + shipping;
-
-        // For now, just show an alert. In a real application, this would redirect to a payment gateway
-        alert(`Thank you for your order!\n\nOrder Summary:\nSubtotal: ₹${total.toLocaleString()}\nShipping: ${shipping === 0 ? 'Free' : '₹' + shipping}\nTotal: ₹${finalTotal.toLocaleString()}\n\nYou will be redirected to the payment page.`);
-        
-        // Clear cart after successful checkout
-        this.cart = [];
-        this.saveCart();
-        this.renderCart();
-        this.updateCartCount();
-    }
+    // handleCheckout method removed - checkout button is now a dummy button
 }
 
 // Initialize cart page when DOM is loaded
